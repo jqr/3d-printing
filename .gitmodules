@@ -1,0 +1,3 @@
+[submodule ".stl_normalize"]
+	path = .stl_normalize
+	url = https://github.com/revarbat/stl_normalize
