@@ -31,6 +31,10 @@ $fs = 0.5;  // Facet size
 
 // total thing twice as tall as interior bit
 
+// V1 Issues:
+// 1. X IR Port missing
+// 2. X Move inner ledge up 1-2mm
+// 3. X align seams on back edge
 
 
 inner_height = 5;
@@ -45,14 +49,14 @@ difference() {
         [51+5, 63+3],
         [base_od, -inner_height],
         [70/2, -inner_height],
-        [70/2,   0],
-        [51,   0],
+        [70/2,   2],
+        [51,   2],
 
       ]
     );
   translate([0,0,30]) rotate([-90,0,0]) cylinder(h=100, r=15/2);
+  translate([8,0,30]) rotate([-90,0,36]) translate([0,-10,40]) cylinder(h=40, 10, 20);
 }
-
 
 
 
